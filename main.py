@@ -8,7 +8,7 @@ def test_capcha_google():
 #browser.element('[id="search"]').should(have.text('SQL-EX'))
 
 
-def test_capcha_yandex():
+def test_popup_yandex():
     browser.open('https://ya.ru')
     browser.element('[name="text"]').click().type('sqlex').press_enter()
     browser.element('html').should(have.text('Сделайте Яндекс основным поиском'))
